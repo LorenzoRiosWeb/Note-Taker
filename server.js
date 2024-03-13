@@ -2,7 +2,7 @@ const express = require('express')
 
 const app = express();
 
-const PORT = 3001;
+const PORT = process.eventNames.PORT || 3001;
 
 app.use(express.static('public'));
 

@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs')
 
 // npm package that allows for unique ids to be created
-var uuid = require('uuid');
+const { v4:uuidv4 } = require('uuid');
 
 
 // routing
@@ -26,12 +26,12 @@ module.exports = (app) => {
       title: req.body.title,
       text: req.body.text,
       // creating unique id for each note
-      id: uuid(),
+      id: uuidv4(),
     };
     // pushing created note to be written in the db.json file
     db.push(userNote);
     fs.writeFileSync('db/db.json', JSON.stringify(db));
-    res.json(db);
+    res.json();
 
   });
 
