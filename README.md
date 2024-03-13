@@ -1,5 +1,5 @@
 # Note Taker 
-    ## My project is about creating an application called Note take that can be used to write and save notes. 
+    My project is about creating an application called Note take that can be used to write and save notes. 
     This application will use Express.js back end and will save and retrives note data
 
  ## Live Server Link
